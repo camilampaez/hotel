@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+#nav{  /* Para el fondo infinito de la barra de nav, si no se ven espacios blancos a los costados */ 
+    margin-right: auto;
+    margin-left: auto;
+    border-width:0px;
+    background-color: #212429;
+}
+  
+#imagen{ /* Para que la imagen quede de fondo con texto arriba (#titulo_miramar) */ 
+    width: 100%; 
+    position: relative;
+}
+
+#titulo_miramar{
+    position: absolute;
+    top: 30%;
+}
+
+#footer{ /* Para el fondo infinito del pie de página, si no se ven espacios blancos a los costados */
+    margin-right: auto;
+    margin-left: auto;
+    border-width:0px;
+    background-color: #212429;
+}
+  
+ul {  /* Para no mostrar items en la lista */ 
+  list-style: none;
+}
+
+.custom-list ul li::before { /* Para agregar un elemento item personalizado */ 
+    content: "•";
+    color: rgb(255, 179, 0);
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+}
+
+input[type=checkbox]:checked{ /* Para que en los cuadrados el chequeo se vea negro y no azul */ 
+    accent-color: black;
+}
+
+input[type="radio"]:checked { /* Para que en los circulitos el chequeo se vea negro y no azul */ 
+	background-color: black;
+}
+
+.modal-header { /* Para el fondo negro y texto blanco en el head de los modals */ 
+    background: black;
+    color: white;
+}
+
+.modal-busqueda { /* Fondo del modal de búsqueda */ 
+    background: #0dcaf0;
+}
+
+.modal-reserva { /* Fondo del modal de nueva reserva */ 
+    background: #198754;
+}
+
+.modal-modificacion { /* Fondo del modal de modificaciones de reserva */ 
+    background: #ffc107;
+}
+
+.modal-eliminacion { /* Fondo del modal de eliminaciones de reserva */ 
+    background: #dc3545;
+}
